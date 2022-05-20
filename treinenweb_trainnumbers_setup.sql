@@ -10,14 +10,14 @@ CREATE TABLE IF NOT EXISTS `trains_columns` (
   `Sequence` int(4) DEFAULT NULL,
   `Description` varchar(225) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE IF NOT EXISTS `trains_dates` (
   `NumberID` int(4) DEFAULT NULL,
   `ColumnID` int(4) DEFAULT NULL,
   `Date` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `trains_numbers` (
   `ID` int(4) NOT NULL AUTO_INCREMENT,
@@ -30,4 +30,4 @@ CREATE TABLE IF NOT EXISTS `trains_numbers` (
   `SubcategoryID` int(4) DEFAULT NULL,
   `Description` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
